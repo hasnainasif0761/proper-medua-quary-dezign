@@ -1,0 +1,48 @@
+.card{
+    width: 200px;
+    height: 250px;
+    background: orangered;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+.card .section img{
+    width:200px;
+    height:150px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+.card .section p{
+    display: none;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width:1px) and (max-width:650px){
+    .card{
+        width:100%;
+        height: 200px;
+        background: lightgreen;
+        display:flex;
+        margin-top: 10px;
+    }
+    .card .section img{
+        height:200px;
+        width:250px;
+    }
+    .card .section h1,p{
+        color:black;
+    }
+    .card .section p{
+        display: block;
+    }
+    .card .section.second{
+        margin: 20px;
+    }
+    .wrapper{
+        display: block;
+    }
+}
